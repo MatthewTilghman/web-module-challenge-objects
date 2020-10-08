@@ -13,9 +13,12 @@ The function should:
   2. Create and return an object using the received values  
 */
 
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(name, price, category){
+    return {name, price, category};
 }
+console.log(createMenuItem('Cafe Latte', '4', 'Drinks'));
+console.log(createMenuItem('Breakfast Burrito', '16', 'Breakfast'));
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Test your createMenuItems function by doing the following:
@@ -25,7 +28,13 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
+// function createMenuItem(name, price, category){
+//   {'burger', '4', 'lunch'};
+//   {'eggs', '6', 'brunch'};
+//   {'steak', '10', 'dinner'};
 
+// }
+// console.log(createMenuItem);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -68,6 +77,10 @@ Using the reviews array above:
 */
 
 
+  console.log(reviews[5]);
+
+
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -78,11 +91,18 @@ Using the reviews array above do the following:
 
 
 
+reviews.push(("Bob", 1, "I adore pickles"));
+console.log(reviews);
+
+
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following:
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
+
+
 
 
 
@@ -98,8 +118,8 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(review, index) {
+  return `${this.name} gave the retaurant a ${this.rating} and their feedback was: ${this.feedback}`
 }
 
 
@@ -116,9 +136,12 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  const index = array.length - 1;
+  return `${this.name} gave the retaurant a ${this.rating} and their feedback was: ${this.feedback}`;
+  
 } 
+// console.log(getLastReview(reviews));
 
 
 
